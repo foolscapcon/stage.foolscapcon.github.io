@@ -1,1 +1,2 @@
 exclude: ["README.md", "Gemfile*", "*.sh"]
+encoding: UTF-8

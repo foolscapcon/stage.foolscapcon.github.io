@@ -43,7 +43,7 @@
                 
                 <!--right-->
                 <div class="col-md-9">
-                    {% capture md %}{% include landing-content.md %}{% endcapture %}
+                    {% capture md %}{% include {{page.content-file}} %}{% endcapture %}
                     <!--markdown content-->                    
                     {{ md|markdownify }}
                     <!--/markdown content-->                    
