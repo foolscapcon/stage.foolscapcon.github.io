@@ -1,0 +1,35 @@
+<!-- sidebar-nav -->
+<div class="col-md-3" id="leftCol">
+    <ul class="nav nav-stacked" id="sidebar">
+    <!-- brand -->
+        <div id="masthead">  
+            <h1>Bootstrap Sidebar
+                <p class="lead">With Affix and Scrollspy</p>
+            </h1>
+            <div class="well well-lg"> 
+                <div class="row">
+        	    <img src="//placehold.it/180x100" class="img-responsive">
+                </div>
+	        Some text here
+            </div>
+        </div><!--/masthead-->
+        <!-- /brand -->
+        {% for item in page.sections %}
+<!-- forloop.index = {{ forloop.index }} {{item}} -->
+        {%   assign heading = item['heading'] %}
+        {%   if item['ref'] %}
+        {%     assign ref = item['ref'] %}
+        {%   else %}
+        {%     capture slug %}{{ heading | trim | slugify }}{% endcapture %}
+        {%   assign ref = slug %}
+        {%   endif %}
+        {%   if item['title'] %}
+        {%     assign title = item['title] %}
+        {%   else %}
+        {%     assign title = heading %}
+        {%   endif %}        
+        <li><a href="#{{ref}}">{{heading}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+<!-- /sidebar-nav -->
