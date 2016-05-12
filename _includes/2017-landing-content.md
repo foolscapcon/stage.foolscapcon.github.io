@@ -5,8 +5,8 @@
 <!-- tagline -->{{ site.tagline }}
 February 5–7, 2017 at the Hilton Seatac Airport Hotel in Seattle, Washington
 
-{% assign heading = 'about' %}
-## <a name="{{ heading }}"></a> {{ site.landing[heading] }} {#{{ heading }}}
+## {::comment}{% assign section_index = 0 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}<a name="{{section.ref}}"></a>{{section.heading}}   {#{{section.ref}}}
+
 
 ### We are a new kind of convention.
 
@@ -42,13 +42,13 @@ Most conventions have a rigid schedule of events planned out before the attendee
 
 If it sounds crazy and experimental, don’t worry – it’s been time-tested and successful at innumerable conventions including several years of Foolscap itself. Open-space works, and once you’ve experienced it, you’ll see why we’ve made it a core feature!
 
-## <a name="register"></a>How do I register? {#register}
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 To be part of the convention, you’ll need a membership. The money you spend on your membership supports the convention and its activities throughout the year. It includes admission to all programming and convention areas for the day or days you are registered. The Bite of Foolscap requires an additional ticket, which you can buy at the same time. All members agree to abide by [our rules](#rules); we reserve the right to revoke your membership and ask you to leave if you don’t.
 
 {{STUB: Registration form}}
 
-## <a name="location"></a>When and where? {#location}
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 Foolscap 2017 starts on the morning of Friday, February 5, and runs until the evening of the following Sunday, February 7.
 
@@ -68,7 +68,7 @@ We’re proud to host our event at the Hilton Seatac Airport Hotel, right across
 
 The weather in the greater Seattle area in February tends to be cool and wet. Dress in layers and bring a water-repellant coat. A sweater or fleece jacket for cooler areas of the hotel is a good idea, too.
 
-## <a name="functions"></a>What is there to do? {#functions}
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 ### <a name="commons"></a>The heart of Foolscap is the Commons.
 
@@ -96,7 +96,7 @@ The Foolscap Bazaar adjoins the central Commons, making dealers and artists an i
 
 We can create this space and community because people give selflessly. The members of Foolscap donate books, food, time and energy to make the conversation possible. If you have something you want to lend, we’d love to hear from you. We give to create a community, and we always appreciate help. If you’d like to volunteer, contact us at <volunteer@foolscap.org>.
 
-## <a name="events"></a>What’s on the schedule?
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 Our busy weekend of participatory programming means that just about anything can happen – and usually does. But we do anchor the weekend with some pre-set events that everyone can count on.
 
@@ -126,7 +126,7 @@ Sunday around noon we gather for the _Bite of Foolscap._ It’s a friendly brunc
 
 Proceeds from the Foolscap auction enable us to underwrite community outreach activities and offer low-cost student memberships. Come bid on jewelry, artwork, rare books, and plenty of science fiction, fantasy, and geek-themed items – or just come to watch the show! We’ve put rubber chickens, a tiny pool table, and even the con chair’s dignity on sale in the past, but you’ll have to be here to find out what surprises we have in store this year.
 
-## <a name="share"></a>May I bring stuff to show or sell?
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 ### Bring stuff for a strut.
 
@@ -144,7 +144,7 @@ Every year we host an [auction](#auction) with proceeds going to fund future Foo
 
 {{STUB: dealer}}
 
-## <a name="info"></a>What else should I know?
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 <a name="rules"></a>Foolscap appreciates your help in making the convention safe, fun and trouble-free.
 
@@ -162,7 +162,7 @@ Foolscap strives to be a safe and welcoming place where everyone is respected, c
 
 In summary: **If a person tells you “no”, your business with them is done.** You need to obtain advance consent before discussing potentially offensive content. You are always free to ask someone to change the subject in your presence, no questions asked. If you experience or observe unacceptable behavior, please report it to a Listener, who will help you.
 
-## <a name="news"></a>What’s new this year?
+## {::comment}{% assign section_index = section_index | plus:1 %}{% assign section = page.sections[section_index] %}{{section}}{:/comment}{{section.heading}}   {#{{section.ref}}}
 
 ### <a name="goh"></a>Here’s our Guest of Honor.
 

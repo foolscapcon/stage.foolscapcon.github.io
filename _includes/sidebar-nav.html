@@ -28,7 +28,7 @@
         {%   else %}
         {%     assign title = heading %}
         {%   endif %}        
-        <li><a href="#{{ref}}">{{heading}}</a></li>
+        <li><a href="#{{ref}}">{{heading|markdownify}}</a></li>
         {% endfor %}
     </ul>
 </div>
