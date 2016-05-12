@@ -2,16 +2,9 @@
 <div class="col-md-3" id="leftCol">
     <ul class="nav nav-stacked" id="sidebar">
     <!-- brand -->
-        <div id="masthead">  
-            <h1>Bootstrap Sidebar
-                <p class="lead">With Affix and Scrollspy</p>
-            </h1>
-            <div class="well well-lg"> 
-                <div class="row">
-        	    <img src="//placehold.it/180x100" class="img-responsive">
-                </div>
-	        Some text here
-            </div>
+    <div id="masthead">
+        {% include {{page.sidebar-branding-file}} %}
+
         </div><!--/masthead-->
         <!-- /brand -->
         {% for item in page.sections %}
